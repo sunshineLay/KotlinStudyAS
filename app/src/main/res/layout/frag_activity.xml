@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_con"
+        android:layout_width="match_parent"
+        android:layout_height="344dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <Button
+        android:id="@+id/bt_add"
+        android:layout_width="199dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:text="动态添加"
+        app:layout_constraintStart_toStartOf="@+id/bt_replace"
+        app:layout_constraintTop_toBottomOf="@+id/fl_con" />
+
+    <Button
+        android:id="@+id/bt_replace"
+        android:layout_width="199dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:text="动态替换（hide()和show()）"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_remove" />
+
+    <Button
+        android:id="@+id/bt_news"
+        android:layout_width="199dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:text="简单新闻Demo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_replace" />
+
+    <Button
+        android:id="@+id/bt_remove"
+        android:layout_width="199dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:text="动态移除"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_add" />
+    <!--静态添加-->
+    <!--    <fragment-->
+    <!--        android:id="@+id/frag_static"-->
+    <!--        android:name="com.lay.kotlinstudy.fragment.ExampleFragment"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
